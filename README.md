@@ -1,5 +1,4 @@
-# tkinter-button
-Tkinterのbuttonについてのコード
+# tkinter-entry
+Tkinterのentryに関するコード
 
 # 参考記事
-https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
