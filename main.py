@@ -34,7 +34,7 @@ class Application(tk.Frame):
 
     # パスワード確認ボタンがクリックされた場合に実行される関数
     def getPassword(self):
-        # get : 現在入力されている情報を表示する関数
+        # get : 現在入力されているパスワード情報を表示する関数
         print('パスワード : ' + self.entryPassword.get())
 
     def __init__(self, master=None):
@@ -58,12 +58,12 @@ class Application(tk.Frame):
 
         ############################################## entry Widget START ##############################################
 
-        # frame Widget(Frame)を親要素として、entry Widgetを作成する。
+        # frame Widget(Frame)を親要素として、氏名用のentry Widgetを作成する。
         # text : 文字入力に紐づくラベル。名前のようなもの。複数entry Widgetを用意して、同じtextの名前を設定すると、同時に同名のentry Widgetが編集される。
         # width : 幅の設定
         self.entryName = tk.Entry(frame, text="entryName", width=15)
 
-        # frame Widget(Frame)を親要素とした場合に、entry Widgetをどのように配置するのか?
+        # frame Widget(Frame)を親要素とした場合に、氏名用のentry Widgetをどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         self.entryName.pack()
 
@@ -72,19 +72,19 @@ class Application(tk.Frame):
         # 第二引数 : 挿入文字列
         self.entryName.insert(0, "氏名")
 
-        # frame Widget(Frame)を親要素として、entry Widgetを作成する。
+        # frame Widget(Frame)を親要素として、パスワード用のentry Widgetを作成する。
         # text : 文字入力に紐づくラベル。名前のようなもの。複数entry Widgetを用意して、同じtextの名前を設定すると、同時に同名のentry Widgetが編集される。
         # width : 幅の設定
         self.entryPassword = tk.Entry(frame, text="entryPassword", width=15)
+
+        # frame Widget(Frame)を親要素とした場合に、パスワード用のentry Widgetをどのように配置するのか?
+        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
+        self.entryPassword.pack()
 
         # パスワードの入力先へデフォルトで格納したい文字列の挿入。
         # 第一引数 : 文字列の挿入開始位置(0番目からスタート)
         # 第二引数 : 挿入文字列
         self.entryPassword.insert(0, "パスワード")
-
-        # frame Widget(Frame)を親要素とした場合に、entry Widgetをどのように配置するのか?
-        # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
-        self.entryPassword.pack()
 
         ############################################## entry Widget END ##############################################
 
