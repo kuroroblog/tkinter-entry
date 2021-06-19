@@ -51,7 +51,7 @@ class Application(tk.Frame):
         # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         frame = tk.Frame(self.master)
 
-        # Windowを親要素とした場合に、frame Widgetをどのように配置するのか?
+        # Windowを親要素とした場合に、frame Widget(Frame)をどのように配置するのか?
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         frame.pack()
 
