@@ -48,7 +48,7 @@ class Application(tk.Frame):
         ############################################## frame Widget START ##############################################
 
         # Windowを親要素として、frame Widget(Frame)を作成する。
-        # frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
+        # Frameについて : https://kuroro.blog/python/P20XOidA5nh583fYRvxf/
         frame = tk.Frame(self.master)
 
         # Windowを親要素とした場合に、frame Widget(Frame)をどのように配置するのか?
@@ -92,7 +92,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、button Widgetを作成する。
         # text : テキスト情報
         # width : ボタンの幅設定
-        # command : ボタンをクリックした場合に、実行する関数を設定する。
+        # command : ボタンをクリックした場合に、実行する関数を設定する。self.getPasswordとする。
         # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         confirmPasswordButton = tk.Button(frame, text="パスワード確認", width=15, command=self.getPassword)
 
@@ -102,7 +102,7 @@ class Application(tk.Frame):
 
         # frame Widget(Frame)を親要素として、button Widgetを作成する。
         # text : テキスト情報
-        # command : ボタンをクリックした場合に、実行する関数を設定する。
+        # command : ボタンをクリックした場合に、実行する関数を設定する。self.addNameBobButtonとする。
         # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         addNameBobButton = tk.Button(frame, text="追加", command=self.addNameBobButton)
 
@@ -112,7 +112,7 @@ class Application(tk.Frame):
 
         # frame Widget(Frame)を親要素として、button Widgetを作成する。
         # text : テキスト情報
-        # command : ボタンをクリックした場合に、実行する関数を設定する。
+        # command : ボタンをクリックした場合に、実行する関数を設定する。self.clearCommandとする。
         # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         clearButton = tk.Button(frame, text="クリア", command=self.clearCommand)
 
