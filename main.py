@@ -2,13 +2,13 @@ import tkinter as tk
 
 
 class Application(tk.Frame):
-    # 氏名入力用変数
+    # 氏名用のentry Widget変数
     entryName = None
-    # パスワード入力用変数
+    # パスワード用のentry Widget変数
     entryPassword = None
 
     # クリアボタンがクリックされた場合に実行される関数
-    # 氏名、パスワードの入力データをクリアする。
+    # 氏名、パスワードの入力情報をクリアする。
     def clearCommand(self):
         # delete : 氏名情報の削除を行う。
         # 第一引数 : 削除する文字列の開始位置(0番目からスタート)
@@ -67,7 +67,7 @@ class Application(tk.Frame):
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         self.entryName.pack()
 
-        # 氏名の入力先へデフォルトで格納したい文字列の挿入。
+        # 氏名用のentry Widgetへデフォルトで格納したい文字列の挿入。
         # 第一引数 : 文字列の挿入開始位置(0番目からスタート)
         # 第二引数 : 挿入文字列
         self.entryName.insert(0, "氏名")
@@ -80,7 +80,7 @@ class Application(tk.Frame):
         # packについて : https://kuroro.blog/python/UuvLfIBIEaw98BzBZ3FJ/
         self.entryPassword.pack()
 
-        # パスワードの入力先へデフォルトで格納したい文字列の挿入。
+        # パスワード用のentry Widgetへデフォルトで格納したい文字列の挿入。
         # 第一引数 : 文字列の挿入開始位置(0番目からスタート)
         # 第二引数 : 挿入文字列
         self.entryPassword.insert(0, "パスワード")
@@ -93,7 +93,7 @@ class Application(tk.Frame):
         # text : テキスト情報
         # width : ボタンの幅設定
         # command : ボタンをクリックした場合に、実行する関数を設定する。self.getPasswordとする。
-        # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
+        # Buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         confirmPasswordButton = tk.Button(frame, text="パスワード確認", width=15, command=self.getPassword)
 
         # frame Widget(Frame)を親要素とした場合に、button Widgetをどのように配置するのか?
@@ -103,7 +103,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、button Widgetを作成する。
         # text : テキスト情報
         # command : ボタンをクリックした場合に、実行する関数を設定する。self.addNameBobButtonとする。
-        # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
+        # Buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         addNameBobButton = tk.Button(frame, text="追加", command=self.addNameBobButton)
 
         # frame Widget(Frame)を親要素とした場合に、button Widgetをどのように配置するのか?
@@ -113,7 +113,7 @@ class Application(tk.Frame):
         # frame Widget(Frame)を親要素として、button Widgetを作成する。
         # text : テキスト情報
         # command : ボタンをクリックした場合に、実行する関数を設定する。self.clearCommandとする。
-        # buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
+        # Buttonについて : https://kuroro.blog/python/oFju6EngDtcYtIiMIDf1/
         clearButton = tk.Button(frame, text="クリア", command=self.clearCommand)
 
         # frame Widget(Frame)を親要素とした場合に、button Widgetをどのように配置するのか?
